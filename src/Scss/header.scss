@@ -1,0 +1,73 @@
+@import './style.scss';
+
+
+.container {
+    background-color: $bg-color;
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+
+        .logo {
+            font-size: 22px;
+            color: $first-color;
+        }
+
+        .nav__menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 3rem;
+
+            .nav__link {
+                color: $second-color;
+            }
+        }
+
+        .toggler__icon {
+            cursor: pointer;
+            display: none;
+
+            div {
+                width: 22px;
+                height: 2px;
+                background: $second-color;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .toggler__icon {
+            display: block !important;
+        }
+
+        .nav__menu {
+            position: fixed;
+            background: $bg-color;
+            flex-direction: column;
+            top: 10vh;
+            width: 50%;
+            height: 90vh;
+            right: 0;
+            transform: translateX(200%);
+
+
+            .nav__collapse {
+                transform: translateX(0%);
+            }
+        }
+
+        .active {
+            color: $first-color;
+        }
+    }
+
+    @media screen and (max-width: 920px) {
+        button {
+            display: none !important;
+        }
+    }
+}

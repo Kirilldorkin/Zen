@@ -1,0 +1,76 @@
+$bg-color: #181511;
+$text-color: #FFFFFF;
+$first-color: #FFAE2B;
+$second-color: #ACA592;
+$black: #000000;
+$frame-color: #4B4136;
+$border-color: #4B4136;
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: 'Old Standard TT', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.nav,
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: 1px solid $first-color;
+    padding: 1.5vh 1.5vw;
+    cursor: pointer;
+    color: $first-color;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: $text-color;
+}
+
+h3 {
+    font-size: 1.8vw;
+    font-weight: 500;
+    color: $text-color;
+}
+
+p {
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: $first-color;
+}
+
+
+@media screen and (max-width: 768px) {
+    .foto {
+        display: none !important;
+    }
+}

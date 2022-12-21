@@ -1,0 +1,54 @@
+@import './style.scss';
+
+.templates {
+    margin-top: 14vh;
+    margin-bottom: 14vh;
+    text-align: center;
+
+    p {
+        color: $second-color;
+    }
+
+    h1 {
+        color: $first-color;
+        font-size: 5vw;
+        margin-bottom: 10vh;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        .border {
+            border: 1px solid $border-color;
+            padding: 3vh 1vw;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .templates {
+            margin-top: 3vh;
+        }
+
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        p {
+            font-size: 4vw;
+        }
+
+        h1 {
+            font-size: 8vw;
+            margin-bottom: 6vh;
+        }
+    }
+}

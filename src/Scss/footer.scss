@@ -1,0 +1,23 @@
+@import './style.scss';
+
+
+.footer {
+    border-top: 1px solid $border-color;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        color: $border-color;
+    }
+
+    p {
+        color: $second-color;
+        margin: 5vh 0;
+    }
+
+    .gold {
+        color: $first-color;
+    }
+
+
+}

@@ -1,0 +1,67 @@
+@import './style.scss';
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 14vh;
+    margin-bottom: 14vh;
+    text-align: center;
+
+    p {
+        color: $second-color;
+    }
+
+    h1 {
+        color: $first-color;
+        font-size: 5vw;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 15vh;
+
+        button {
+            font-size: 1.5vw;
+            padding: 2.5vh 2.5vw;
+        }
+
+        .down {
+            color: $text-color;
+            background: $first-color;
+        }
+    }
+
+    .social {
+        margin-top: 10vh;
+
+        a {
+            padding: 10px;
+        }
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 8vw;
+        }
+
+        p {
+            font-size: 3vw;
+        }
+
+        .column {
+
+            .column {
+                width: 80%;
+        
+                button {
+                    font-size: 3vw;
+                }
+            }
+            
+        }
+    }
+}
